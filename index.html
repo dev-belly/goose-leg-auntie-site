@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鹅腿阿姨事件 - 深度Skill蒸馏</title>
+    <title>鹅腿阿姨事件 · 校园传播案例</title>
     <style>
         * {
             margin: 0;
@@ -14,8 +14,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #19243a;
+            background: #f5f7fb;
             min-height: 100vh;
         }
 
@@ -26,15 +26,18 @@
         }
 
         .hero {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
+            padding: clamp(1.4rem, 6vw, 4.2rem) clamp(1rem, 5vw, 3.3rem);
+            border-radius: 26px;
+            background: radial-gradient(ellipse at 100% 100%, #e5ecfb, transparent 70%), #fff;
+            border: 1px solid #dce4f2;
+            color: #1c2d4c;
         }
 
         .hero h1 {
-            font-size: 2.5em;
+            font-size: clamp(2.4rem, 6vw, 4.85rem);
+            line-height: 1.08;
+            letter-spacing: -.065em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .hero p {
@@ -47,19 +50,19 @@
             border-radius: 12px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 28px #2433520e;
         }
 
         .card h2 {
-            color: #667eea;
+            color: #3459a6;
             font-size: 1.8em;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #3459a6;
         }
 
         .card h3 {
-            color: #764ba2;
+            color: #544681;
             font-size: 1.4em;
             margin: 25px 0 15px;
         }
@@ -80,7 +83,7 @@
         th {
             background: #f8f9fa;
             font-weight: 600;
-            color: #667eea;
+            color: #3459a6;
         }
 
         tr:hover {
@@ -92,11 +95,11 @@
             border-radius: 8px;
             padding: 20px;
             margin: 15px 0;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #3459a6;
         }
 
         .skill-card h4 {
-            color: #667eea;
+            color: #3459a6;
             margin-bottom: 10px;
         }
 
@@ -112,7 +115,7 @@
             top: 0;
             bottom: 0;
             width: 3px;
-            background: #667eea;
+            background: #3459a6;
         }
 
         .timeline-item {
@@ -129,9 +132,9 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: #667eea;
+            background: #3459a6;
             border: 3px solid white;
-            box-shadow: 0 0 0 3px #667eea;
+            box-shadow: 0 0 0 3px #3459a6;
         }
 
         .checklist {
@@ -149,13 +152,13 @@
             content: '☐';
             position: absolute;
             left: 0;
-            color: #667eea;
+            color: #3459a6;
             font-size: 1.2em;
         }
 
         .tag {
             display: inline-block;
-            background: #667eea;
+            background: #3459a6;
             color: white;
             padding: 4px 12px;
             border-radius: 20px;
@@ -199,22 +202,34 @@
                 padding: 8px;
             }
         }
+        .chapters { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1rem 0 1.45rem; }
+        .chapters a { display: inline-flex; align-items: center; min-height: 44px; padding-inline: .85rem; border: 1px solid #cbd8ed; border-radius: 999px; background: #fff; color: #234a98; font-weight: 650; text-decoration: none; }
+        .chapters a:hover { background: #eaf0fc; }
+        a:focus-visible { outline: 2px solid #2456b9; outline-offset: 4px; }
+        caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+        #timeline, #sources, #evidence { scroll-margin-top: 1.2rem; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <h1>🍗 鹅腿阿姨事件</h1>
+    <main class="container">
+        <header class="hero">
+            <h1>鹅腿阿姨事件</h1>
             <p>深度Skill蒸馏完整版 | 从爆火到翻车的完整复盘</p>
         </div>
 
         <div class="warning">
             <strong>资料范围：</strong>本页核对的是2026年6月10—11日的采访与通报；6月11日通报称正在核查涉嫌误导消费者等行为，不能据此断言目前的处理进度。当事人对改用鸭腿的年份说法不一致，以下保留冲突。运营机制为案例分析，未经对照实验验证。
-        </div>
+        </header>
+        <nav class="chapters" aria-label="文章目录">
+            <a href="#evidence">数据与证据</a>
+            <a href="#timeline">事件时间线</a>
+            <a href="#sources">原始来源</a>
+        </nav>
+
 
         <div class="card">
-            <h2>📊 核心数据面板</h2>
-            <table>
+            <h2 id="evidence">📊 核心数据面板</h2>
+            <table><caption>核心数据与证据</caption>
                 <tr>
                     <th>维度</th>
                     <th>已核对的报道与资料边界</th>
@@ -279,7 +294,7 @@
 
             <div class="skill-card">
                 <h4>Skill 1：高校圈层锚定精准获客</h4>
-                <table>
+                <table><caption>Skill 1：高校圈层锚定精准获客</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>深耕单一高粘性场景（高校），不做广撒网，靠口碑自然扩散</td>
@@ -301,7 +316,7 @@
 
             <div class="skill-card">
                 <h4>Skill 2："失去感"引爆传播</h4>
-                <table>
+                <table><caption>Skill 2："失去感"引爆传播</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>制造"告别/转移/限量"信号，触发用户FOMO情绪</td>
@@ -323,7 +338,7 @@
 
             <div class="skill-card">
                 <h4>Skill 3："名校争夺战"反差叙事</h4>
-                <table>
+                <table><caption>Skill 3："名校争夺战"反差叙事</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>找到"高身份群体"与"接地气事物"的碰撞点，引导用户形成"阵营对抗"</td>
@@ -345,7 +360,7 @@
 
             <div class="skill-card">
                 <h4>Skill 4："表情包+段子"二次传播引擎</h4>
-                <table>
+                <table><caption>Skill 4："表情包+段子"二次传播引擎</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>提供足够的"梗点"（反差、情绪、冲突），降低用户创作门槛</td>
@@ -371,7 +386,7 @@
 
             <div class="skill-card">
                 <h4>Skill 5："社群限量+摇号制"锁客</h4>
-                <table>
+                <table><caption>Skill 5："社群限量+摇号制"锁客</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>若采用限量预售，应公开名额、分配及退款规则；本例的具体摇号规则待补来源</td>
@@ -393,7 +408,7 @@
 
             <div class="skill-card">
                 <h4>Skill 6："快团团+接龙"规模化交易</h4>
-                <table>
+                <table><caption>Skill 6："快团团+接龙"规模化交易</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>用快团团等工具实现规模化团购，降低交易摩擦</td>
@@ -415,7 +430,7 @@
 
             <div class="skill-card">
                 <h4>Skill 7：原料标注与变更说明</h4>
-                <table>
+                <table><caption>Skill 7：原料标注与变更说明</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>清楚写明原料与商品信息，历史叫法发生变化时同步解释原因</td>
@@ -441,7 +456,7 @@
 
             <div class="skill-card">
                 <h4>Skill 8："朴实北漂"人设打造</h4>
-                <table>
+                <table><caption>Skill 8："朴实北漂"人设打造</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>用亲切称呼（XX阿姨）+ 烟火气故事（北漂、卖水果、坚持十几年）打造亲民人设</td>
@@ -463,7 +478,7 @@
 
             <div class="skill-card">
                 <h4>Skill 9："励志故事"情感绑定</h4>
-                <table>
+                <table><caption>Skill 9："励志故事"情感绑定</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>讲述"从卖水果到卖鹅腿，坚持十几年"的奋斗故事</td>
@@ -485,7 +500,7 @@
 
             <div class="skill-card">
                 <h4>Skill 10：商标申请与注册状态</h4>
-                <table>
+                <table><caption>Skill 10：商标申请与注册状态</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>记录品牌标识的申请主体、类别与状态，区分申请和获准注册</td>
@@ -511,7 +526,7 @@
 
             <div class="skill-card">
                 <h4>Skill 11："品名=实物"合规红线（零容忍）</h4>
-                <table>
+                <table><caption>Skill 11："品名=实物"合规红线（零容忍）</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>清楚说明实际原料与商品规格，品牌称呼不能代替原料说明</td>
@@ -543,7 +558,7 @@
 
             <div class="skill-card">
                 <h4>Skill 12："走红=放大镜"第一时间排雷</h4>
-                <table>
+                <table><caption>Skill 12："走红=放大镜"第一时间排雷</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>IP出圈后第一件事：复盘所有宣传口径、资质、历史争议</td>
@@ -565,7 +580,7 @@
 
             <div class="skill-card">
                 <h4>Skill 13："舆情24h响应"机制</h4>
-                <table>
+                <table><caption>Skill 13："舆情24h响应"机制</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>质疑出现→24h内公开说明→立即修改争议宣传→配合监管部门核查</td>
@@ -596,7 +611,7 @@
 
             <div class="skill-card">
                 <h4>Skill 14："人设崩塌"风险预判</h4>
-                <table>
+                <table><caption>Skill 14："人设崩塌"风险预判</caption>
                     <tr>
                         <td><strong>核心动作</strong></td>
                         <td>人设标签与事实的差距越大，崩塌时反噬越猛烈</td>
@@ -620,7 +635,7 @@
         <div class="card">
             <h2>📅 五、翻车案例深度复盘</h2>
 
-            <h3>翻车时间线</h3>
+            <h3 id="timeline">翻车时间线</h3>
             <div class="timeline">
                 <div class="timeline-item">
                     <strong>改用时间有争议</strong> - 当事人同日对不同媒体分别提及2011年前后与2023年后，尚不能确定单一年份
@@ -632,10 +647,10 @@
                     <strong>2023年起</strong> - 据6月10日报道，申请多枚相关商标；申请不等于全部获准注册
                 </div>
                 <div class="timeline-item">
-                    <strong>2026.6.10报道所见</strong> - 接龙商品名称未明示鸭腿或鹅腿，历史改名日期待核验
+                    <strong>2026.6.9</strong> - 团购群公告说明原料为鸭腿，相关内容引发关注
                 </div>
                 <div class="timeline-item">
-                    <strong>2026.6.9</strong> - 团购群公告说明原料为鸭腿，相关内容引发关注
+                    <strong>2026.6.10报道所见</strong> - 接龙商品名称未明示鸭腿或鹅腿，历史改名日期待核验
                 </div>
                 <div class="timeline-item">
                     <strong>2026.6.10</strong> - 采访记载当日停工及道歉意愿；据次日通报，海淀监管部门于本日组织调查
@@ -646,7 +661,7 @@
             </div>
 
             <h3>翻车核心争议</h3>
-            <table>
+            <table><caption>争议与具体表现</caption>
                 <tr>
                     <th>争议点</th>
                     <th>具体表现</th>
@@ -731,7 +746,7 @@
         </div>
 
         <div class="card">
-            <h2>📚 数据来源</h2>
+            <h2 id="sources">📚 数据来源</h2>
             <ul>
                 <li id="source-1"><a href="https://news.sina.com.cn/c/2026-06-10/doc-iniaxqxk5888637.shtml" target="_blank" rel="noopener noreferrer">[1] 红星新闻采访（新浪转载，2026-06-10）</a>：记者指出当事人关于改用时间的两种说法有出入；记录当日停工与道歉意愿</li>
                 <li id="source-2"><a href="https://www.yangtse.com/news/sh/202606/t20260610_361189.html" target="_blank" rel="noopener noreferrer">[2] 扬子晚报/紫牛新闻（2026-06-10）</a>：原料回应、不同渠道售价及商标申请报道</li>
@@ -744,6 +759,6 @@
             <p>文档生成时间：2026年6月10日 · 引用资料核对：2026年10月27日 · 报道范围：2026年6月10—11日</p>
             <p>dev_belly@outlook.com</p>
         </div>
-    </div>
+    </main>
 </body>
 </html>
